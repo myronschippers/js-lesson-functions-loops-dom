@@ -24,6 +24,9 @@ console.log('BASKET:', basket);
 // LOOP
 
 // for i
+for () {
+
+}
 
 // for of
 
