@@ -5,7 +5,12 @@ $(document).ready(onReady);
 // onReady()
 
 function onReady() {
-  console.log('I\'m ready');
+  // console.log('I\'m ready');
+  $('#jsAddFruit').on('click', clickAddFruit);
+}
+
+function clickAddFruit(event) {
+  console.log('CLICKED!!!');
 }
 
 // create a function that adds a fruit to my basket
