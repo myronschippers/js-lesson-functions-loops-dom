@@ -41,20 +41,24 @@ console.log('BASKET:', basket);
 console.log(basket[1]) // logs second item
 
 // for i
-console.log('\nfor i LOOP:');
-for (let i = 0; i < basket.length; i++) {
-  const valueOfItem = basket[i];
-  console.log(valueOfItem);
+function printFruitInBasket() {
+  console.log('\nfor i LOOP:');
+  for (let i = 0; i < basket.length; i++) {
+    const valueOfItem = basket[i];
+    console.log(valueOfItem);
+  }
 }
+
+printFruitInBasket();
 
 // for of
-console.log('\nfor of LOOP:');
-for (let valueOfItem2 of basket) {
-  console.log(valueOfItem2);
-}
+// console.log('\nfor of LOOP:');
+// for (let valueOfItem2 of basket) {
+//   console.log(valueOfItem2);
+// }
 
 // for in
-console.log('\nfor i LOOP:');
-for (let indexOfItem3 in basket) {
-  console.log(basket[indexOfItem3]);
-}
+// console.log('\nfor i LOOP:');
+// for (let indexOfItem3 in basket) {
+//   console.log(basket[indexOfItem3]);
+// }
