@@ -11,6 +11,7 @@ function onReady() {
 
 function clickAddFruit(event) {
   console.log('CLICKED!!!');
+  console.log($('#jsFruit').val());
 }
 
 // create a function that adds a fruit to my basket
