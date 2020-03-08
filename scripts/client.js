@@ -4,7 +4,8 @@ const basket = [];
 // create a function that adds a fruit to my basket
 function addToBasket(fruit) {
   console.log('addToBasket!!!');
-  console.log(fruit);
+  // assuming fruit is a string
+  basket.push(fruit);
 }
 
 addToBasket('Orange'); // test to see that function works
