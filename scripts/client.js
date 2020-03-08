@@ -1,5 +1,16 @@
+// ==========================================================
+// STEP THREE !!!!!!
+// ==========================================================
+
 console.log('Hello Ursus');
 const basket = [];
+
+$(document).ready(onReady);
+// onReady()
+
+function onReady() {
+  console.log('I\'m ready');
+}
 
 // create a function that adds a fruit to my basket
 function addToBasket(fruit) {
@@ -20,13 +31,13 @@ addToBasket('Star Fruit');
 console.log('BASKET:', basket);
 
 // log out every piece of fruit in the basket
-// How do we iterate through items in an array?
 // LOOP
+console.log(basket[1]) // logs second item
 
 // for i
 console.log('\nfor i LOOP:');
 for (let i = 0; i < basket.length; i++) {
-  const valueOfItem = basket[i];  
+  const valueOfItem = basket[i];
   console.log(valueOfItem);
 }
 
