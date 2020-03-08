@@ -1,3 +1,7 @@
+// ==========================================================
+// STEP TWO.4 !!!!!!
+// ==========================================================
+
 console.log('Hello Ursus');
 const basket = [];
 
@@ -31,5 +35,9 @@ for (let i = 0; i < basket.length; i++) {
 }
 
 // for of
+console.log('\nfor of LOOP:');
+for (let valueOfItem2 of basket) {
+  console.log(valueOfItem2);
+}
 
 // for in
