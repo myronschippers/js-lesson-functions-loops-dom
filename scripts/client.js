@@ -1,3 +1,7 @@
+// ==========================================================
+// STEP THREE.3 !!!!!!
+// ==========================================================
+
 console.log('Hello Ursus');
 const basket = [];
 
@@ -11,7 +15,7 @@ function onReady() {
 
 function clickAddFruit(event) {
   console.log('CLICKED!!!');
-  console.log($('#jsFruit').val());
+  addToBasket($('#jsFruit').val());
 }
 
 // create a function that adds a fruit to my basket
@@ -22,12 +26,12 @@ function addToBasket(fruit) {
 }
 
 // add some fruit to my basket
-addToBasket('Orange');
-addToBasket('Apple');
-addToBasket('Pear');
-addToBasket('Mango');
-addToBasket('Kiwi');
-addToBasket('Star Fruit');
+// addToBasket('Orange');
+// addToBasket('Apple');
+// addToBasket('Pear');
+// addToBasket('Mango');
+// addToBasket('Kiwi');
+// addToBasket('Star Fruit');
 
 // log out basket
 console.log('BASKET:', basket);
