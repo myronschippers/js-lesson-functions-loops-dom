@@ -1,7 +1,3 @@
-// ==========================================================
-// STEP TWO.4 !!!!!!
-// ==========================================================
-
 console.log('Hello Ursus');
 const basket = [];
 
@@ -41,3 +37,7 @@ for (let valueOfItem2 of basket) {
 }
 
 // for in
+console.log('\nfor i LOOP:');
+for (let indexOfItem3 in basket) {
+  console.log(basket[indexOfItem3]);
+}
