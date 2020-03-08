@@ -22,3 +22,9 @@ console.log('BASKET:', basket);
 // log out every piece of fruit in the basket
 // How do we iterate through items in an array?
 // LOOP
+
+// for i
+
+// for of
+
+// for in
