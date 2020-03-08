@@ -16,6 +16,9 @@ function clickAddFruit(event) {
   addToBasket(fruitName);
   // let's clear out the form field
   $('#jsFruit').val('');
+
+  // print the contents of our basket array
+  printFruitInBasket();
 }
 
 // create a function that adds a fruit to my basket
@@ -48,8 +51,6 @@ function printFruitInBasket() {
     console.log(valueOfItem);
   }
 }
-
-printFruitInBasket();
 
 // for of
 // console.log('\nfor of LOOP:');
