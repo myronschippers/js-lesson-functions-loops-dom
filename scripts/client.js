@@ -2,11 +2,12 @@ console.log('Hello Ursus');
 const basket = [];
 
 // create a function that adds a fruit to my basket
-function addToBasket() {
+function addToBasket(fruit) {
   console.log('addToBasket!!!');
+  console.log(fruit);
 }
 
-addToBasket(); // test to see that function works
+addToBasket('Orange'); // test to see that function works
 
 // add some fruit to my basket
 
