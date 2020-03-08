@@ -8,9 +8,13 @@ function addToBasket(fruit) {
   basket.push(fruit);
 }
 
-addToBasket('Orange'); // test to see that function works
-
 // add some fruit to my basket
+addToBasket('Orange');
+addToBasket('Apple');
+addToBasket('Pear');
+addToBasket('Mango');
+addToBasket('Kiwi');
+addToBasket('Star Fruit');
 
 // log out basket
 console.log('BASKET:', basket);
