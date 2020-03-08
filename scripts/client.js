@@ -24,8 +24,10 @@ console.log('BASKET:', basket);
 // LOOP
 
 // for i
-for () {
-
+console.log('\nfor i LOOP:');
+for (let i = 0; i < basket.length; i++) {
+  const valueOfItem = basket[i];  
+  console.log(valueOfItem);
 }
 
 // for of
