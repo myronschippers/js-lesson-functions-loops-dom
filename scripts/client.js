@@ -45,10 +45,14 @@ console.log(basket[1]) // logs second item
 
 // for i
 function printFruitInBasket() {
+  const $basket = $('#jsBasket');
+
   console.log('\nfor i LOOP:');
   for (let i = 0; i < basket.length; i++) {
     const valueOfItem = basket[i];
     console.log(valueOfItem);
+    // instead of logging add to DOM
+    $basket.append('<li>' + valueOfItem + '</li>');
   }
 }
 
