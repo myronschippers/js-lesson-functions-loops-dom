@@ -1,4 +1,3 @@
-console.log('Hello Ursus');
 const basket = [
   {fruit: 'Orange', price: 0.2 },
   {fruit: 'Apple', price: 0.2},
@@ -12,7 +11,6 @@ $(document).ready(onReady);
 // onReady()
 
 function onReady() {
-  // console.log('I\'m ready');
   $('#jsAddFruit').on('click', clickAddFruit);
 
   printFruitInBasket();
@@ -20,7 +18,6 @@ function onReady() {
 
 // let's add price to our fruit
 function clickAddFruit(event) {
-  console.log('CLICKED!!!');
   const fruitName = $('#jsFruit').val();
   const fruitPrice = $('#jsPrice').val();
 
@@ -35,21 +32,12 @@ function clickAddFruit(event) {
 
 // create a function that adds a fruit to my basket
 function addToBasket(fruit, price) {
-  console.log('addToBasket!!!');
   // assuming fruit is a string
   basket.push({
     fruit: fruit,
     price: price,
   });
 }
-
-// add some fruit to my basket
-// addToBasket('Orange');
-// addToBasket('Apple');
-// addToBasket('Pear');
-// addToBasket('Mango');
-// addToBasket('Kiwi');
-// addToBasket('Star Fruit');
 
 // log out basket
 console.log('BASKET:', basket);
@@ -62,20 +50,16 @@ console.log(basket[1]) // logs second item
 function printFruitInBasket() {
   const $basket = $('#jsBasket');
   const $totalPrice = $('#jsTotalPrice');
-  // TODO: Sum all of the prices to get a total
   let sumOfPrice = 0;
 
   $basket.empty();
-  // console.log('\nfor i LOOP:');
   for (let i = 0; i < basket.length; i++) {
     const valueOfItem = basket[i];
     sumOfPrice = sumOfPrice + valueOfItem.price;
-    // console.log(valueOfItem);
     // instead of logging add to DOM
     $basket.append(`<li>${valueOfItem.fruit}</li>`);
   }
 
-  // TODO: Must print priceSum to the DOM
   $totalPrice.empty();
   $totalPrice.append(`$${sumOfPrice}`)
 }
