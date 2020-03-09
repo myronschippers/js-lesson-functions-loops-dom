@@ -9,6 +9,7 @@ function onReady() {
   $('#jsAddFruit').on('click', clickAddFruit);
 }
 
+// let's add price to our fruit
 function clickAddFruit(event) {
   console.log('CLICKED!!!');
   const fruitName = $('#jsFruit').val();
