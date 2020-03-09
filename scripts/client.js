@@ -53,7 +53,7 @@ function printFruitInBasket() {
     const valueOfItem = basket[i];
     // console.log(valueOfItem);
     // instead of logging add to DOM
-    $basket.append('<li>' + valueOfItem + '</li>');
+    $basket.append(`<li>${valueOfItem}</li>`);
   }
 }
 
