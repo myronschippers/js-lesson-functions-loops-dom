@@ -1,3 +1,7 @@
+// ==========================================================
+// STEP FIVE.5 !!!!!! OBJECTS
+// ==========================================================
+
 console.log('Hello Ursus');
 const basket = [];
 
@@ -52,6 +56,7 @@ console.log(basket[1]) // logs second item
 // for i
 function printFruitInBasket() {
   const $basket = $('#jsBasket');
+  const $totalPrice = $('#jsTotalPrice');
   // TODO: Sum all of the prices to get a total
   let sumOfPrice = 0;
 
@@ -64,9 +69,10 @@ function printFruitInBasket() {
     // instead of logging add to DOM
     $basket.append(`<li>${valueOfItem.fruit}</li>`);
   }
-  console.log('Total Price:', sumOfPrice);
 
-  // TODO: Must print sumOfPrice to the DOM
+  // TODO: Must print priceSum to the DOM
+  $totalPrice.empty();
+  $totalPrice.append(`$${sumOfPrice}`)
 }
 
 // for of
