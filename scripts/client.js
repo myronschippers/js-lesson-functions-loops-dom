@@ -1,9 +1,12 @@
-// ==========================================================
-// STEP FIVE.5 !!!!!! OBJECTS
-// ==========================================================
-
 console.log('Hello Ursus');
-const basket = [];
+const basket = [
+  {fruit: 'Orange', price: 0.2 },
+  {fruit: 'Apple', price: 0.2},
+  {fruit: 'Pear', price: 0.2},
+  {fruit: 'Mango', price: 0.2},
+  {fruit: 'Kiwi', price: 0.2},
+  {fruit: 'Star Fruit', price: 0.2}
+];
 
 $(document).ready(onReady);
 // onReady()
@@ -11,6 +14,8 @@ $(document).ready(onReady);
 function onReady() {
   // console.log('I\'m ready');
   $('#jsAddFruit').on('click', clickAddFruit);
+
+  printFruitInBasket();
 }
 
 // let's add price to our fruit
