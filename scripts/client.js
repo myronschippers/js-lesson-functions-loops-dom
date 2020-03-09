@@ -25,10 +25,13 @@ function clickAddFruit(event) {
 }
 
 // create a function that adds a fruit to my basket
-function addToBasket(fruit) {
+function addToBasket(fruit, price) {
   console.log('addToBasket!!!');
   // assuming fruit is a string
-  basket.push(fruit);
+  basket.push({
+    fruit: fruit,
+    price: price,
+  });
 }
 
 // add some fruit to my basket
