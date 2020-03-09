@@ -52,6 +52,7 @@ console.log(basket[1]) // logs second item
 // for i
 function printFruitInBasket() {
   const $basket = $('#jsBasket');
+  // TODO: Sum all of the prices to get a total
 
   $basket.empty();
   // console.log('\nfor i LOOP:');
@@ -59,7 +60,7 @@ function printFruitInBasket() {
     const valueOfItem = basket[i];
     // console.log(valueOfItem);
     // instead of logging add to DOM
-    $basket.append(`<li>${valueOfItem}</li>`);
+    $basket.append(`<li>${valueOfItem.fruit}</li>`);
   }
 }
 
