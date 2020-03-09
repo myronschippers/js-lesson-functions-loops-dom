@@ -13,10 +13,12 @@ function onReady() {
 function clickAddFruit(event) {
   console.log('CLICKED!!!');
   const fruitName = $('#jsFruit').val();
+  const fruitPrice = $('#jsPrice').val();
 
-  addToBasket(fruitName);
+  addToBasket(fruitName, fruitPrice);
   // let's clear out the form field
   $('#jsFruit').val('');
+  $('#jsPrice').val('');
 
   // print the contents of our basket array
   printFruitInBasket();
